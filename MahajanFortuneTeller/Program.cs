@@ -14,6 +14,14 @@ namespace MahajanFortuneTeller
 
             Console.WriteLine("HELLO gentle MORTAL! I am Elvira, the Great and WONDROUS Oracle of CLEVELAND!");
             Console.WriteLine("If you'd like to gaze into the future, I can help you with that!");
+            Console.WriteLine("Would you like to gaze into the future with me?");
+            string answer = Console.ReadLine().ToLower().Trim();
+                if (answer == "yes")
+                { Console.WriteLine("Let's proceed!");
+                }
+                else
+                { Console.WriteLine("TOO BAD! You're in my clutches now!");
+                }
             Console.WriteLine("Enter your first name for the Great Elvira.");
             string userFirstName = Console.ReadLine().Trim();
 
