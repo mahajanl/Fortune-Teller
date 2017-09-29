@@ -23,6 +23,7 @@ namespace MahajanFortuneTeller
             Console.WriteLine("How about your age? I'll never tell another... living... soul!");
             int userAge = int.Parse(Console.ReadLine().Trim());
 
+            //PART II
                 string retire;
                     if (userAge % 2 == 0)
                     { retire = "5";
@@ -34,6 +35,7 @@ namespace MahajanFortuneTeller
             Console.WriteLine("If I could also have your birth month as a NUMBER 1-12.");
             Console.WriteLine("Not that I don't already KNOW... I'm just bad with number conversion.");
             int userMonth = int.Parse(Console.ReadLine().Trim());
+            //PART II
             string money;
             if (userMonth == 1 && userMonth <= 4)
             { money = "$1,045,070";
@@ -54,35 +56,42 @@ namespace MahajanFortuneTeller
                 if (userFavColor == "help")
                 { Console.WriteLine("R O Y G B I V stands for the colors of the rainbow as \nRed, Orange, Yellow, Green, Blue, Indigo, and Violet.");
                     userFavColor = Console.ReadLine().ToLower().Trim();
-            }
-            
-
+                }
+            //PART II
             string transport;
-                    if (userFavColor == "red")
-            { transport = "a sparkling unicorn";
+            if (userFavColor == "red")
+            {
+                transport = "a sparkling unicorn";
             }
-                    else if (userFavColor == "orange")
-            { transport = "Apona";
+            else if (userFavColor == "orange")
+            {
+                transport = "Apona";
             }
-                    else if (userFavColor == "yellow")
-            { transport = "Buckbeak";
+            else if (userFavColor == "yellow")
+            {
+                transport = "Buckbeak";
             }
-                    else if (userFavColor == "green")
-            { transport = "a unicycle";
+            else if (userFavColor == "green")
+            {
+                transport = "a unicycle";
             }
-                    else if (userFavColor == "blue")
-            { transport = "a rusty old Rambler";
+            else if (userFavColor == "blue")
+            {
+                transport = "a rusty old Rambler";
             }
-                    else if (userFavColor == "indigo")
-            { transport = "your trusty two feet";
+            else if (userFavColor == "indigo")
+            {
+                transport = "your trusty two feet";
             }
-                    else
-            { transport = "Floo Powder";
+            else
+            {
+                transport = "Floo Powder";
             }
 
             Console.WriteLine("And now, for the final FLOURISH, the last piece of the puzzle... \nHow many siblings do you have, my dearie?");
             int userSibs = int.Parse(Console.ReadLine().Trim());
-
+            
+            //PART II
             string vacaHome;
             if (userSibs == 0)
                 {vacaHome = "Australia";
@@ -103,9 +112,9 @@ namespace MahajanFortuneTeller
                 { vacaHome = "the Caribbean Islands, so you will all have your own space";
                 }
 
-
+            //PART III
             Console.WriteLine(userFirstName + " " + userSecondName + ", you will retire in " + retire + " years with " + money);
-            Console.WriteLine(" in your bank account with a vacation home in " + vacaHome + " and " + transport + " will get you from place to place.");
+            Console.WriteLine("in your bank account with a vacation home in " + vacaHome + " and " + transport + " will get you from place to place.");
 
 
         }
