@@ -14,7 +14,7 @@ namespace MahajanFortuneTeller
 
             Console.WriteLine("HELLO gentle MORTAL! I am Elvira, the Great and WONDROUS Oracle of CLEVELAND!");
             Console.WriteLine("If you'd like to gaze into the future, I can help you with that!");
-            Console.WriteLine("Would you like to gaze into the future with me? Tell me YES or NO");
+            Console.WriteLine("Would you like to gaze into the future with me? Type YES or NO and then hit ENTER");
             string answer = Console.ReadLine().ToLower().Trim();
             if (answer == "yes")
             {
