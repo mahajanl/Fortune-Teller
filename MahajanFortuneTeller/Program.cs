@@ -16,12 +16,14 @@ namespace MahajanFortuneTeller
             Console.WriteLine("If you'd like to gaze into the future, I can help you with that!");
             Console.WriteLine("Would you like to gaze into the future with me? Tell me YES or NO");
             string answer = Console.ReadLine().ToLower().Trim();
-                if (answer == "yes")
-                { Console.WriteLine("Let's proceed!");
-                }
-                else
-                { Console.WriteLine("TOO BAD! You're in my clutches now!");
-                }
+            if (answer == "yes")
+            {
+                Console.WriteLine("Let's proceed!");
+            }
+            else
+            {
+                Console.WriteLine("TOO BAD! You're in my clutches now!");
+            }
             Console.WriteLine("Enter your first name for the Great Elvira.");
             string userFirstName = Console.ReadLine().Trim();
 
@@ -32,20 +34,23 @@ namespace MahajanFortuneTeller
             int userAge = int.Parse(Console.ReadLine().Trim());
 
             //PART II
-                string retire;
-                    if (userAge % 2 == 0)
-                    { retire = "5";
-                    }
-                    else 
-                    { retire ="2";
-                    }
-       
-            Console.WriteLine("If I could also have your birth month as a NUMBER 1-12.");
+            string retire;
+            if (userAge % 2 == 0)
+            {
+                retire = "5";
+            }
+            else
+            {
+                retire = "2";
+            }
+
+            Console.WriteLine("If I could also have your birth month as a WHOLE NUMBER 1-12.");
             Console.WriteLine("Not that I don't already KNOW... I'm just bad with number conversion.");
             int userMonth = int.Parse(Console.ReadLine().Trim());
+           
             //PART II
             string money;
-            if (userMonth == 1 && userMonth <= 4)
+            if (userMonth > 0 && userMonth <= 4)
             { money = "$1,045,070";
             }
             else if (userMonth >= 5 && userMonth <= 8)
