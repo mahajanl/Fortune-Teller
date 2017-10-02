@@ -27,6 +27,12 @@ namespace MahajanFortuneTeller
             Console.WriteLine("Enter your first name for the Great Elvira.");
             string userFirstName = Console.ReadLine().Trim();
 
+            //THIS IS JUST AN ATTEMPT AS THE STRETCH - it didn't work. 
+            //if (userFirstName == "quit")
+            //{ Console.WriteLine("no one likes a quitter, dearie...");
+            //        Console.Application.Exit()}
+
+            
             Console.WriteLine("And now can I have your last name? Promise I won't google you.");
             string userSecondName = Console.ReadLine().Trim();
 
