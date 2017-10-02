@@ -31,6 +31,7 @@ namespace MahajanFortuneTeller
             //if (userFirstName == "quit")
             //{ Console.WriteLine("no one likes a quitter, dearie...");
             //        Console.Application.Exit()}
+            //This.Close()
 
             
             Console.WriteLine("And now can I have your last name? Promise I won't google you.");
@@ -39,7 +40,7 @@ namespace MahajanFortuneTeller
             Console.WriteLine("How about your age? I'll never tell another... living... soul!");
             int userAge = int.Parse(Console.ReadLine().Trim());
 
-            //PART II
+            //PART II is interspersed throughout
             string retire;
             if (userAge % 2 == 0)
             {
