@@ -70,11 +70,12 @@ namespace MahajanFortuneTeller
             { money = "$0.00";
             }
 
-            Console.WriteLine("And now.. tell me your MOST FAVORITE of the colors of the ROYGBIV rainbow!");
+            Console.WriteLine("And now... tell me your MOST FAVORITE of the colors of the ROYGBIV rainbow!");
             Console.WriteLine("If you don't know what ROYGBIV stands for, let me know by entering \"HELP.\"");
             string userFavColor = Console.ReadLine().ToLower().Trim();
                 if (userFavColor == "help")
                 { Console.WriteLine("R O Y G B I V stands for the colors of the rainbow as \nRed, Orange, Yellow, Green, Blue, Indigo, and Violet.");
+                Console.WriteLine("Now that THAT'S out fo the way, enter you very favorite color.");
                     userFavColor = Console.ReadLine().ToLower().Trim();
                 }
             //PART II
